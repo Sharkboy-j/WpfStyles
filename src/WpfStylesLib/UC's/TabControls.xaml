@@ -1,0 +1,66 @@
+﻿<UserControl
+    x:Class="WpfStylesLib.UC_s.TabControls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfStylesLib.UC_s"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Width="567">
+        <TabControl
+            Height="150"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Style="{DynamicResource TabControlOne}"
+            TabStripPlacement="Top">
+            <TabItem Header="General" Style="{DynamicResource TabItemOne}" />
+            <TabItem
+                Background="Transparent"
+                Header="Trackers"
+                Style="{DynamicResource TabItemOne}" />
+            <TabItem
+                Background="Transparent"
+                Header="Peers"
+                Style="{DynamicResource TabItemOne}" />
+            <TabItem
+                Background="Transparent"
+                Header="Files"
+                Style="{DynamicResource TabItemOne}" />
+            <TabItem
+                Background="Transparent"
+                Header="Stats"
+                Style="{DynamicResource TabItemOne}" />
+
+        </TabControl>
+
+        <TabControl
+            Height="150"
+            Margin="0,10,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Style="{DynamicResource TabControlTwo}"
+            TabStripPlacement="Top">
+            <TabItem Header="General" Style="{DynamicResource TabItemTwo}" />
+            <TabItem
+                Background="Transparent"
+                Header="Trackers"
+                Style="{DynamicResource TabItemTwo}" />
+            <TabItem
+                Background="Transparent"
+                Header="Peers"
+                Style="{DynamicResource TabItemTwo}" />
+            <TabItem
+                Background="Transparent"
+                Header="Files"
+                Style="{DynamicResource TabItemTwo}" />
+            <TabItem
+                Background="Transparent"
+                Header="Stats"
+                Style="{DynamicResource TabItemTwo}" />
+
+        </TabControl>
+    </StackPanel>
+
+
+</UserControl>
