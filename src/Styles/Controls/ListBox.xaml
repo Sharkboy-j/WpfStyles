@@ -1,0 +1,44 @@
+﻿<local:BaseUserControl
+    x:Class="Styles.Controls.ListBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Styles.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel>
+        <TextBlock
+            Margin="4,6"
+            Style="{StaticResource Header20}"
+            Text="Default List Box" />
+        <ListBox
+            Width="380"
+            Margin="4,6"
+            HorizontalAlignment="Left">
+            <ListBoxItem Padding="5">
+                <TextBlock Text="Button" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="CheckBox" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="ComboBox" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="Expander" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="Label" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="ListView" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="Menu" />
+            </ListBoxItem>
+            <ListBoxItem Padding="5">
+                <TextBlock Text="RadioButton" />
+            </ListBoxItem>
+        </ListBox>
+    </StackPanel>
+</local:BaseUserControl>

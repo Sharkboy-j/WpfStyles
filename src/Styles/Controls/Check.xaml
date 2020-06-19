@@ -1,0 +1,35 @@
+﻿<local:BaseUserControl
+    x:Class="Styles.Controls.Check"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Styles.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel MinWidth="200">
+            <TextBlock
+                Margin="4,6"
+                Style="{StaticResource Header20}"
+                Text="Default Check Box" />
+            <CheckBox Content="Enabled" />
+            <CheckBox Content="Checked" IsChecked="True" />
+            <CheckBox Content="Disabled" IsEnabled="False" />
+        </StackPanel>
+        <StackPanel MinWidth="200">
+            <TextBlock
+                Margin="4,6"
+                Style="{StaticResource Header20}"
+                Text="Accent Check Box" />
+            <CheckBox Content="Enabled" Style="{StaticResource AccentCheckBox}" />
+            <CheckBox
+                Content="Checked"
+                IsChecked="True"
+                Style="{StaticResource AccentCheckBox}" />
+            <CheckBox
+                Content="Disabled"
+                IsEnabled="False"
+                Style="{StaticResource AccentCheckBox}" />
+        </StackPanel>
+    </StackPanel>
+</local:BaseUserControl>

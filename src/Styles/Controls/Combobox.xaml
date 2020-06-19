@@ -1,0 +1,105 @@
+﻿<local:BaseUserControl
+    x:Class="Styles.Controls.Combobox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Styles.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Horizontal">
+        <StackPanel MinWidth="200">
+            <TextBlock
+                Margin="4,6"
+                Style="{StaticResource Header20}"
+                Text="Default Combo Box" />
+            <ComboBox Width="150" HorizontalAlignment="Left">
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Default"
+                    IsSelected="True" />
+                <ComboBoxItem Padding="2" Content="Editable" />
+                <ComboBoxItem Padding="2" Content="Disabled" />
+            </ComboBox>
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                IsEditable="True">
+                <ComboBoxItem Padding="2" Content="Default" />
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Editable"
+                    IsSelected="True" />
+                <ComboBoxItem Padding="2" Content="Disabled" />
+            </ComboBox>
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                IsEnabled="False">
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Disabled"
+                    IsSelected="True" />
+            </ComboBox>
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                IsEditable="True"
+                IsEnabled="False">
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Disabled"
+                    IsSelected="True" />
+            </ComboBox>
+        </StackPanel>
+        <StackPanel MinWidth="200">
+            <TextBlock
+                Margin="4,6"
+                Style="{StaticResource Header20}"
+                Text="Accent Combo Box" />
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                Style="{StaticResource AccentComboBox}">
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Default"
+                    IsSelected="True" />
+                <ComboBoxItem Padding="2" Content="Editable" />
+                <ComboBoxItem Padding="2" Content="Disabled" />
+            </ComboBox>
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                IsEditable="True"
+                Style="{StaticResource AccentComboBox}">
+                <ComboBoxItem Padding="2" Content="Default" />
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Editable"
+                    IsSelected="True" />
+                <ComboBoxItem Padding="2" Content="Disabled" />
+            </ComboBox>
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                IsEnabled="False"
+                Style="{StaticResource AccentComboBox}">
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Disabled"
+                    IsSelected="True" />
+            </ComboBox>
+            <ComboBox
+                Width="150"
+                HorizontalAlignment="Left"
+                IsEditable="True"
+                IsEnabled="False"
+                Style="{StaticResource AccentComboBox}">
+                <ComboBoxItem
+                    Padding="2"
+                    Content="Disabled"
+                    IsSelected="True" />
+            </ComboBox>
+        </StackPanel>
+    </StackPanel>
+</local:BaseUserControl>

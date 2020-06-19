@@ -1,0 +1,289 @@
+﻿<local:BaseUserControl
+    x:Class="Styles.Controls.TabControls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Styles.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Horizontal">
+        <TabControl Margin="-1,0,-1,-1" Style="{StaticResource AccentTabControl}">
+            <TabItem Padding="10,4" Header="Settings">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        Margin="0,20,0,0"
+                        HorizontalAlignment="Left">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            Grid.Column="0"
+                            Margin="10,4"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Text="Region:" />
+
+                        <ComboBox
+                            Grid.Column="1"
+                            Width="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                            <ComboBoxItem Content="Asia" />
+                            <ComboBoxItem Content="Europe" IsSelected="True" />
+                        </ComboBox>
+
+                        <Button
+                            Grid.Column="2"
+                            Width="22"
+                            HorizontalAlignment="Left"
+                            Content="..." />
+                    </Grid>
+
+                    <Separator
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        Margin="20" />
+
+                    <Grid
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid
+                            Grid.Row="0"
+                            Margin="0,0,0,6"
+                            HorizontalAlignment="Left">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                Grid.Column="0"
+                                Margin="10,4"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Text="First day of week:" />
+                            <ComboBox
+                                Grid.Column="1"
+                                Width="200"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <ComboBoxItem Content="Monday" IsSelected="True" />
+                                <ComboBoxItem Content="Sunday" />
+                            </ComboBox>
+                        </Grid>
+
+                        <Grid
+                            Grid.Row="1"
+                            Margin="0,0,0,20"
+                            HorizontalAlignment="Left">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                Grid.Column="0"
+                                Margin="10,4"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Text="Calendar:" />
+                            <ComboBox
+                                Grid.Column="1"
+                                Width="200"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <ComboBoxItem Content="Gregorian" IsSelected="True" />
+                            </ComboBox>
+                        </Grid>
+
+                        <Grid
+                            Grid.Row="2"
+                            Margin="0,0,0,6"
+                            HorizontalAlignment="Left">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                Grid.Column="0"
+                                Margin="10,4"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Text="Currency:" />
+                            <ComboBox
+                                Grid.Column="1"
+                                Width="200"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center">
+                                <ComboBoxItem Content="Euro" IsSelected="True" />
+                                <ComboBoxItem Content="US Dollar" IsSelected="True" />
+                            </ComboBox>
+                        </Grid>
+
+                        <Grid
+                            Grid.Row="3"
+                            Margin="0"
+                            HorizontalAlignment="Left">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock
+                                Grid.Column="0"
+                                Margin="10,4"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Text="Decimal:" />
+                            <ComboBox
+                                Grid.Column="1"
+                                Width="100"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Center">
+                                <ComboBoxItem Content="." IsSelected="True" />
+                                <ComboBoxItem Content="," />
+                            </ComboBox>
+                        </Grid>
+                    </Grid>
+
+                    <Separator
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        Margin="20" />
+
+                    <Grid
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        HorizontalAlignment="Left">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="10,4"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Text="Time format:" />
+                        <CheckBox
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Content="24-Hour Time"
+                            IsChecked="True"
+                            Style="{StaticResource AccentCheckBox}" />
+
+                        <CheckBox
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalAlignment="Left"
+                            Content="Correct Spelling automatically"
+                            Style="{StaticResource AccentCheckBox}" />
+                        <CheckBox
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            HorizontalAlignment="Left"
+                            Content="Backup"
+                            Style="{StaticResource AccentCheckBox}" />
+                        <Grid
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Margin="20,10,10,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Orientation="Horizontal">
+                                <ComboBox
+                                    Width="126"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Center">
+                                    <ComboBoxItem Content="Daily Backups" IsSelected="True" />
+                                    <ComboBoxItem Content="Weekly Backups" IsSelected="True" />
+                                </ComboBox>
+                                <TextBlock
+                                    Margin="10,4"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Text="to Folder" />
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Orientation="Horizontal">
+                                <TextBox
+                                    Width="126"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center" />
+                                <Button
+                                    Width="22"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Content="..." />
+                            </StackPanel>
+
+                            <CheckBox
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Content="Show backup in menu" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Padding="10,4" Header="Tab Item 1" />
+            <TabItem Padding="10,4" Header="Tab Item 2" />
+        </TabControl>
+    </StackPanel>
+</local:BaseUserControl>
