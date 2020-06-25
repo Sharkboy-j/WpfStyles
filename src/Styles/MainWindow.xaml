@@ -266,6 +266,28 @@
             <TabItem
                 Width="200"
                 Padding="10,8"
+                Header="ProgressBar">
+                <TabItem.Resources>
+                    <Style
+                        x:Key="ExampleGroupBoxStyle"
+                        BasedOn="{StaticResource GrayGroupBox}"
+                        TargetType="{x:Type GroupBox}">
+                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                        <Setter Property="Margin" Value="0,10,0,10" />
+                    </Style>
+                </TabItem.Resources>
+                <ScrollViewer Padding="10" HorizontalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <GroupBox Header="ProgressBar" Style="{DynamicResource ExampleGroupBoxStyle}">
+                            <controls:ProgressBar />
+                        </GroupBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem
+                Width="200"
+                Padding="10,8"
                 Header="RadioButton">
                 <TabItem.Resources>
                     <Style

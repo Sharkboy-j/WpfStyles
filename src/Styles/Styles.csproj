@@ -85,12 +85,16 @@
     <Compile Include="Controls\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ProgressBar.xaml.cs">
+      <DependentUpon>ProgressBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\RadioButtons.xaml.cs">
       <DependentUpon>RadioButtons.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Scroll.xaml.cs">
       <DependentUpon>Scroll.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Sprocket.cs" />
     <Compile Include="Controls\TabControls.xaml.cs">
       <DependentUpon>TabControls.xaml</DependentUpon>
     </Compile>
@@ -143,6 +147,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProgressBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
